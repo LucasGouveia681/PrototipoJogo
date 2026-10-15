@@ -1,5 +1,9 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using JetBrains.Annotations;
+
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -97,6 +101,36 @@ public class Personagem : MonoBehaviour
         Controller.Move(movimento * Time.deltaTime);
 
     }
+    // UI e contador
+public GameObject winTextObject;
+public TextMeshProUGUI CountText;
+private int count = 0;
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
+        }
+    }
+
+    //NOVO: atualiza o texto e verifica a vitória
+    void SetCountText()
+    {
+        CountText.text = "Pontos: " + count.ToString();
+
+        if (count >= 12)
+        {
+            winTextObject.SetActive(true);
+        }
+    }
 }
+
+
+
+
+
 
 

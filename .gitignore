@@ -1,1 +1,2 @@
-[Ll]ibrary/ echo/[Tt]emp/ echo/[Oo]bj/ echo/[Bb]uild/ echo/[Bb]uilds/ echo/[Ll]ogs/ echo/[Uu]ser[Ss]ettings/ echo .vs/ echo .vscode/ echo *.csproj echo *.sln echo *.slnx echo *.user echo *.blend1 
+
+/[Ll]ibrary/ /[Tt]emp/ /[Oo]bj/ /[Bb]uild/ /[Bb]uilds/ /[Ll]ogs/ /[Uu]ser[Ss]ettings/ /[Mm]emoryCaptures/ /[Rr]ecordings/ .vs/ .vscode/ .idea/ *.csproj *.sln *.suo *.tmp *.user *.userprefs *.pidb *.pdb *.mdb *.opendb *.VC.db *.apk *.aab *.unitypackage sysinfo.txt
